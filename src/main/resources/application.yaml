@@ -1,0 +1,13 @@
+feign:
+  client:
+    config:
+      open-movie-client:
+        loggerLevel: FULL
+        default-query-parameters:
+          apikey: ${omdbapi.key}
+        connectTimeout:  ${omdbapi.connectTimeout:2000}
+        readTimeout:  ${omdbapi.readTimeout:2000}
+
+logging:
+  level:
+    br.com.fredericci.omdbapi.client: WARN

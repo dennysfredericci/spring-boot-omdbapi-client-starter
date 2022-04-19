@@ -4,11 +4,6 @@
 
 This is a client library to consume OMDb API using Spring Boot in a really simple way.
 
-
-https://www.omdbapi.com/
-
-https://github.com/cfpb/open-source-project-template/blob/main/README.md
-
 ## Getting Started in 3 Steps
 
 1. Add the library to your Spring Boot project

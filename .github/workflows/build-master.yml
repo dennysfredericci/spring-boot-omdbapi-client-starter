@@ -8,6 +8,7 @@ on:
     branches: [ master ]
 
 jobs:
+
   build:
 
     runs-on: ubuntu-latest
@@ -20,5 +21,15 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+    - id: install-secret-key
+      name: Install gpg secret key
+      run: |
+        cat <(echo -e "${{ secrets.OSSRH_GPG_SECRET_KEY }}") | gpg --batch --import
+        gpg --list-secret-keys --keyid-format LONG
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: | 
+        mvn \
+        --batch-mode \
+        -Dgpg.passphrase=${{ secrets.OSSRH_GPG_SECRET_KEY_PASSWORD }} \
+        --file pom.xml \
+        clean install package

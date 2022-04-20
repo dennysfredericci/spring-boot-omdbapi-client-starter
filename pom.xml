@@ -19,7 +19,43 @@
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <developers>
+        <developer>
+            <name>Dennys Fredericci</name>
+            <email>dennys@fredericci.com.br</email>
+            <organization>Fredericci</organization>
+            <organizationUrl>https://www.fredericci.com.br</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:ssh:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</connection>
+        <developerConnection>scm:git:ssh:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</developerConnection>
+        <url>https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter/tree/master</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -50,38 +86,60 @@
         </dependency>
     </dependencies>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.3.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadoc</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
-    <developers>
-        <developer>
-            <name>Dennys Fredericci</name>
-            <email>dennys@fredericci.com.br</email>
-            <organization>Fredericci</organization>
-            <organizationUrl>https://www.fredericci.com.br</organizationUrl>
-        </developer>
-    </developers>
-
-    <scm>
-        <connection>scm:git:git://github.com/simpligility/ossrh-demo.git</connection>
-        <developerConnection>scm:git:ssh://github.com:simpligility/ossrh-demo.git</developerConnection>
-        <url>http://github.com/simpligility/ossrh-demo/tree/master</url>
-    </scm>
-
-    <licenses>
-        <license>
-            <name>MIT License</name>
-            <url>http://www.opensource.org/licenses/mit-license.php</url>
-        </license>
-    </licenses>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
 </project>

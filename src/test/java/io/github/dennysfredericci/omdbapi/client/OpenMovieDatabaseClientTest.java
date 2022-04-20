@@ -1,4 +1,4 @@
-package br.com.fredericci.omdbapi.client;
+package io.github.dennysfredericci.omdbapi.client;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.tomakehurst.wiremock.WireMockServer;

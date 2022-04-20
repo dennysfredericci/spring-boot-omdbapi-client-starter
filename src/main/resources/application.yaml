@@ -10,4 +10,4 @@ feign:
 
 logging:
   level:
-    br.com.fredericci.omdbapi.client: WARN
+    io.github.dennysfredericci.omdbapi.client: WARN

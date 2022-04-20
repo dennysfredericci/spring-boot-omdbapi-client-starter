@@ -1,6 +1,4 @@
-package br.com.fredericci.omdbapi.client;
-
-import org.springframework.stereotype.Component;
+package io.github.dennysfredericci.omdbapi.client;
 
 import java.text.NumberFormat;
 import java.text.ParseException;

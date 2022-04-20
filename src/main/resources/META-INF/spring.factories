@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=br.com.fredericci.omdbapi.client.MovieApiConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=io.github.dennysfredericci.omdbapi.client.MovieApiConfiguration

@@ -1,4 +1,4 @@
-package br.com.fredericci.omdbapi.client;
+package io.github.dennysfredericci.omdbapi.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;

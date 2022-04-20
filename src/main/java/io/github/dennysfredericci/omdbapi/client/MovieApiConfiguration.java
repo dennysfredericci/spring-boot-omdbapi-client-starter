@@ -1,4 +1,4 @@
-package br.com.fredericci.omdbapi.client;
+package io.github.dennysfredericci.omdbapi.client;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.openfeign.EnableFeignClients;

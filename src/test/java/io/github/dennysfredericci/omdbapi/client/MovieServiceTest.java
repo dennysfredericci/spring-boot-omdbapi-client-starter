@@ -1,4 +1,4 @@
-package br.com.fredericci.omdbapi.client;
+package io.github.dennysfredericci.omdbapi.client;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

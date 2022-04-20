@@ -1,4 +1,4 @@
-package br.com.fredericci.omdbapi.client;
+package io.github.dennysfredericci.omdbapi.client;
 
 public class MovieServiceException extends RuntimeException {
     public MovieServiceException(String message) {

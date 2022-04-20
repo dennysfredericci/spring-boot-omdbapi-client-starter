@@ -1,6 +1,6 @@
 # Spring Boot OMDb API Client 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Master Branch Build](https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter/actions/workflows/build-master.yml/badge.svg)
 
 This is a client library to consume OMDb API using Spring Boot in a really simple way.
 

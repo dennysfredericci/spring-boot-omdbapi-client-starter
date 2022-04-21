@@ -11,7 +11,7 @@
 
     <groupId>io.github.dennysfredericci.omdbapi</groupId>
     <artifactId>spring-boot-omdbapi-client-starter</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>OMDb API Client</name>
     <description>Spring Boot Starter for OMDb API</description>
 
@@ -34,7 +34,7 @@
         <connection>scm:git:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</connection>
         <developerConnection>scm:git:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</developerConnection>
         <url>https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter/tree/master</url>
-      <tag>spring-boot-omdbapi-client-starter-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <licenses>

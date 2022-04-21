@@ -32,8 +32,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:ssh:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</connection>
-        <developerConnection>scm:git:ssh:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</developerConnection>
+        <connection>scm:git:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</connection>
+        <developerConnection>scm:git:https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter.git</developerConnection>
         <url>https://github.com/dennysfredericci/spring-boot-omdbapi-client-starter/tree/master</url>
     </scm>
 

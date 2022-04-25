@@ -10,9 +10,9 @@ This is a client library to consume OMDb API using Spring Boot in a really simpl
 
 ```
 <dependency>
-    <groupId>io.github.dennysfredericci.omdbapi</groupId>
-    <artifactId>spring-boot-omdbapi-client-starter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+  <groupId>io.github.dennysfredericci.omdbapi</groupId>
+  <artifactId>spring-boot-omdbapi-client-starter</artifactId>
+  <version>0.0.1</version>
 </dependency>
 ```
 
